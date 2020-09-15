@@ -1,6 +1,10 @@
 package org.d3if1008.fundamentals1
 
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
 
+
+@Parcelize
 class User  (
     var username: String? = null,
     var name: String? = null,
@@ -12,4 +16,5 @@ class User  (
     var avatar: Int = 0
 
 
-)
+): Parcelable
+
